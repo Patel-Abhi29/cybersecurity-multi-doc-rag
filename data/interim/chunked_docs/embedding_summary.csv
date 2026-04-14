@@ -1,0 +1,2 @@
+num_records,embedding_dimension,chunk_size,chunk_overlap,model_name
+613,768,800,120,darrowoflykos/google_embeddinggemma-300m-qat-q8_0-GGUF

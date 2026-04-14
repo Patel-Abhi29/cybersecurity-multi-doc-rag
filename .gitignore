@@ -1,1 +1,2 @@
 .venv/
+vectorstore/qdrant_data/.lock
