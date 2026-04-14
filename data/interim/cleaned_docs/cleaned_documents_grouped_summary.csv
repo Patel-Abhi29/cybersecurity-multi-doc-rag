@@ -1,0 +1,5 @@
+file_name,doc_type,num_docs,total_chars,total_words,avg_chars
+NIST.CSWP.29.pdf,pdf,32,68352,9468,2136.0
+audit.txt,txt,1,20154,3105,20154.0
+cui-ssp-template-final.docx,docx,1,32742,4039,32742.0
+nist.sp.800-61r2.pdf,pdf,80,226753,31965,2834.4125
