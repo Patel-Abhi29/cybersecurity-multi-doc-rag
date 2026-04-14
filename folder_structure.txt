@@ -1,0 +1,122 @@
+cybersecurity-multi-doc-rag/
+│
+├── README.md
+├── requirements.txt
+├── .env.example
+├── .gitignore
+├── pyproject.toml
+│
+├── configs/
+│   ├── app_config.yaml
+│   ├── chunking_config.yaml
+│   ├── embedding_config.yaml
+│   ├── retrieval_config.yaml
+│   └── logging_config.yaml
+│
+├── data/
+│   ├── raw/
+│   │   ├── CSF_2_0.pdf
+│   │   ├── Incident_Handling_Guide.pdf
+│   │   ├── CUI_SSP_Template.docx
+│   │   └── Audit_Trails.txt
+│   │
+│   ├── interim/
+│   │   ├── extracted_docs/
+│   │   ├── cleaned_docs/
+│   │   └── chunked_docs/
+│   │
+│   └── processed/
+│       ├── metadata_registry.json
+│       ├── chunks.parquet
+│       └── evaluation_sets/
+│
+├── research/
+│   ├── 01_document_loading_tests.ipynb
+│   ├── 02_text_cleaning_and_metadata.ipynb
+│   ├── 03_chunking_experiments.ipynb
+│   ├── 04_embedding_and_vector_db_tests.ipynb
+│   ├── 05_retrieval_quality_checks.ipynb
+│   ├── 06_prompt_and_answer_generation_tests.ipynb
+│   ├── 07_end_to_end_rag_validation.ipynb
+│   └── 08_failure_case_analysis.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── loaders/
+│   │   ├── __init__.py
+│   │   ├── pdf_loader.py
+│   │   ├── docx_loader.py
+│   │   ├── txt_loader.py
+│   │   └── factory.py
+│   │
+│   ├── processing/
+│   │   ├── __init__.py
+│   │   ├── cleaner.py
+│   │   ├── metadata_manager.py
+│   │   ├── chunker.py
+│   │   └── document_registry.py
+│   │
+│   ├── embeddings/
+│   │   ├── __init__.py
+│   │   ├── lmstudio_embeddings.py
+│   │   └── embedding_factory.py
+│   │
+│   ├── vectorstore/
+│   │   ├── __init__.py
+│   │   ├── qdrant_client.py
+│   │   ├── index_manager.py
+│   │   └── schema.py
+│   │
+│   ├── retrieval/
+│   │   ├── __init__.py
+│   │   ├── retriever.py
+│   │   ├── reranker.py
+│   │   ├── filters.py
+│   │   └── query_expansion.py
+│   │
+│   ├── generation/
+│   │   ├── __init__.py
+│   │   ├── lmstudio_llm.py
+│   │   ├── prompts.py
+│   │   ├── answer_builder.py
+│   │   └── citation_formatter.py
+│   │
+│   ├── evaluation/
+│   │   ├── __init__.py
+│   │   ├── retrieval_eval.py
+│   │   ├── answer_eval.py
+│   │   └── test_cases.py
+│   │
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   ├── file_utils.py
+│   │   └── ids.py
+│   │
+│   └── app/
+│       ├── __init__.py
+│       ├── rag_pipeline.py
+│       └── cli.py
+│
+├── scripts/
+│   ├── ingest_documents.py
+│   ├── build_index.py
+│   ├── run_eval.py
+│   └── demo_query.py
+│
+├── vectorstore/
+│   └── qdrant_data/
+│
+├── logs/
+│   ├── app.log
+│   ├── ingestion.log
+│   └── retrieval_eval.log
+│
+└── tests/
+    ├── test_loaders.py
+    ├── test_chunking.py
+    ├── test_metadata.py
+    ├── test_retrieval.py
+    └── test_generation.py
