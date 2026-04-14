@@ -1,0 +1,4 @@
+strategy,num_chunks,avg_chars_per_chunk,avg_words_per_chunk
+small_recursive,897,399.54292084726865,55.89966555183946
+medium_recursive,613,621.047308319739,86.84991843393148
+large_recursive,414,891.9154589371981,124.55072463768116

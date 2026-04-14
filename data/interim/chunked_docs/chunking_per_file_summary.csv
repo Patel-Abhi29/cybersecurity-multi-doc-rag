@@ -1,0 +1,13 @@
+strategy,file_name,doc_type,num_chunks,avg_chars,avg_words
+large_recursive,NIST.CSWP.29.pdf,pdf,90,798.7111111111111,110.83333333333333
+large_recursive,audit.txt,txt,22,925.0,142.77272727272728
+large_recursive,cui-ssp-template-final.docx,docx,33,1091.090909090909,134.72727272727272
+large_recursive,nist.sp.800-61r2.pdf,pdf,269,895.9591078066915,126.40148698884758
+medium_recursive,NIST.CSWP.29.pdf,pdf,131,569.8473282442748,78.85496183206106
+medium_recursive,audit.txt,txt,38,540.421052631579,83.57894736842105
+medium_recursive,cui-ssp-template-final.docx,docx,50,730.14,90.06
+medium_recursive,nist.sp.800-61r2.pdf,pdf,394,632.0025380710659,89.41624365482234
+small_recursive,NIST.CSWP.29.pdf,pdf,186,381.3817204301075,52.95161290322581
+small_recursive,audit.txt,txt,58,368.01724137931035,56.93103448275862
+small_recursive,cui-ssp-template-final.docx,docx,78,439.6025641025641,54.5
+small_recursive,nist.sp.800-61r2.pdf,pdf,575,403.16347826086957,56.93913043478261
